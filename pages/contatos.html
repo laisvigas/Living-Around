@@ -12,21 +12,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Contatos</title>
 </head>
 
 <body>
 
     <!--NAV-->
-    <nav class="navbar navbar-expand-lg navbar-dark"
-        style="background: none; position: absolute; width: 100%; z-index: 2;">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end m-4" style="font-family: 'Josefin Slab', sans-serif;"
-                id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-end m-4"
+                style="font-family: 'Josefin Slab', sans-serif;" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link mx-2 text-white" href="./acomodacao.html">ACOMODAÇÃO</a>
@@ -56,36 +56,42 @@
         <div class="text-start" style="z-index: 1; font-family: 'Jura', sans-serif;">
             <div class="container text-start">
                 <div class="row">
-                  <div class="col">
-                    <form class="bg-black p-3 rounded">
-                        <div class="mb-3">
-                            <label for="name" class="form-label m-0">Nome:</label>
-                            <input type="text" class="form-control" id="name">
-                          </div>
-                        <div class="mb-3">
-                          <label for="email" class="form-label m-0">Email:</label>
-                          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label m-0">Mensagem:</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button class="btn btn-black border-white text-white rounded-pill px-5">Enviar</button>
-                    </form>
-                  </div>
+                    <div class="col">
+                        <form class="bg-black p-3 rounded">
+                            <div class="mb-3">
+                                <label for="name" class="form-label m-0">Nome:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label m-0">Email:</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label m-0">Mensagem:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button class="btn btn-black border-white text-white rounded-pill px-5">Enviar</button>
+                        </form>
+                    </div>
 
-        <!--QUOTE-->
-                  <div class="col">
-                    <figure class="text-end">
-                        <blockquote class="blockquote">
-                          <p>Viajar é descobrir que todos estão errados sobre outros países.</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer text-white">
-                            Aldous Huxley
-                        </figcaption>
-                      </figure>
-                  </div>
+                    <!--QUOTE-->
+                    <div class="col">
+                        <figure class="text-end">
+                            <blockquote class="blockquote">
+                                <p>Viajar é descobrir que todos estão errados sobre outros países.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer text-white">
+                                Aldous Huxley
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-              </div>
+            </div>
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+            </script>
     </div>
+</body>
+</html>

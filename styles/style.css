@@ -1,0 +1,30 @@
+/* NAV */
+
+/* large screens */
+@media (min-width: 992px) {
+    nav.navbar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: none !important;
+        z-index: 2;
+    }
+}
+
+/* small screens */
+@media (max-width: 991.98px) {
+    nav.navbar {
+        position: relative;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar-collapse .nav-link {
+        color: black !important;
+    }
+}
