@@ -26,4 +26,8 @@
     .navbar-collapse .nav-link {
         color: black !important;
     }
+
+    #mapContainer {
+        height: 200px !important;
+      }
 }

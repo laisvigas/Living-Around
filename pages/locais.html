@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Jura:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Locais</title>
+</head>
+
+<body>
+
+    <!--NAV-->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+            <!--home icon-->
+            <a href="index.html" class="navbar-brand">
+                <img src="../images/home-icon.png" alt="Home" style="width: 40px; height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end m-4"
+                style="font-family: 'Josefin Slab', Georgia, serif, sans-serif;" id="navbarNav">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./acomodacao.html">ACOMODAÇÃO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./locais.html">LOCAIS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contatos.html">CONTATOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--background image-->
+    <div class="container-fluid" style="
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/watch.png);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;">
+
+        <!--MAIN-->
+        <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="container mb-5">
+                <div class="row justify-content-between gx-lg-5">
+                    <!--first col-->
+                    <div class="col-12 col-lg-5 justify-content-between mb-4 mt-4">
+                        <form class="p-4 rounded-5 text-white w-100 h-60"
+                            style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #D9D9D9;">
+
+                            <div class="mb-3 text-black">
+                                <label for="country" class="form-label m-0">Escolha o país:</label>
+                                <select class="form-select" id="country" onchange="updateCities()">
+                                    <option selected disabled value="">país</option>
+                                    <option value="br">Brasil</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="us">Estados Unidos</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 text-black pb-3">
+                                <label for="city" class="form-label m-0">Escolha a cidade:</label>
+                                <select class="form-select" id="city" disabled>
+                                    <option selected disabled value="">cidade</option>
+                                </select>
+                            </div>
+
+                            <div class="text-center pb-4">
+                                <button type="button" class="btn text-black w-50" style="background-color: #686931;"
+                                    onclick="showMapSection()">
+                                    Ver
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--second col with two divs-->
+                    <div class="col-12 col-lg-5 mb-4" id="mapSection" style="display: none;">
+                        <!--map-->
+                        <div class="bg-light rounded-5 mb-4" style="height: 300px;" id="mapContainer"> <iframe
+                                id="mapFrame" width="100%" height="100%" style="border:0; border-radius: 1.5rem;"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                src="https://www.google.com/maps?q=Lisboa&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="bg-black opacity-75 text-white rounded-4 p-4"
+                            style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+                            <div>
+                                <h1 class="fs-6">LIVING AROUND</h1>
+                                <p class="m-0">Rua da Alegria, 666</p>
+                                <p class="mb-2">4000-789</p>
+                                <p class="mb-0">livingaround_porto@living.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+
+    <script src="../scripts/updateCityDropdown.js"></script>
+</body>
+
+</html>
