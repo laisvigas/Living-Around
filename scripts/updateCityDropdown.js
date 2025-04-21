@@ -4,6 +4,38 @@ const cityOptions = {
   us: ["Nova Iorque", "Los Angeles", "Chicago", "Miami"],
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const countrySelect = document.getElementById("country");
+  const citySelect = document.getElementById("city");
+  const showMapBtn = document.getElementById("showMapBtn");
+
+  function validateSelection() {
+    const countryValid = countrySelect.value !== "";
+    const cityValid = citySelect.value !== "";
+    showMapBtn.disabled = !(countryValid && cityValid);
+  }
+
+  countrySelect.addEventListener("change", () => {
+    updateCities();
+    validateSelection();
+  });
+
+  citySelect.addEventListener("change", validateSelection);
+
+  showMapBtn.addEventListener("click", () => {
+    const selectedCountry = countrySelect.value;
+    const selectedCity = citySelect.options[citySelect.selectedIndex]?.text;
+
+
+    const mapFrame = document.getElementById("mapFrame");
+    mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(
+      selectedCity + ", " + selectedCountry
+    )}&output=embed`;
+
+    showMapSection();
+  });
+});
+
 function updateCities() {
   const countrySelect = document.getElementById("country");
   const citySelect = document.getElementById("city");
@@ -22,28 +54,6 @@ function updateCities() {
   }
 }
 
-function updateMap() {
-  const countrySelect = document.getElementById("country");
-  const citySelect = document.getElementById("city");
-  const selectedCountry = countrySelect.value;
-
-  const selectedCity = citySelect.options[citySelect.selectedIndex]?.text;
-  if (!selectedCity) return;
-
-  const mapFrame = document.getElementById("mapFrame");
-  mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(
-    selectedCity + ", " + selectedCountry
-  )}&output=embed`;
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const verButton = document.querySelector('[data-bs-target="#map"]');
-  if (verButton) {
-    verButton.addEventListener("click", updateMap);
-  }
-});
-
-// show second column
 function showMapSection() {
   const mapSection = document.getElementById("mapSection");
   if (mapSection) {
