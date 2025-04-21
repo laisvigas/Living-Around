@@ -20,7 +20,7 @@
 
     <header>
         <!--NAV-->
-        <nav class="navbar navbar-expand-sm">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
             <div class="container-fluid">
                 <!--home icon (black)-->
                 <a href="index.html" class="navbar-brand">
@@ -31,7 +31,7 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end m-4"
+                <div class="collapse navbar-collapse justify-content-end"
                     style="font-family: 'Josefin Slab', Georgia, serif;" id="navbarNav">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
@@ -111,7 +111,7 @@
                                     <li>Carregador USB;</li>
                                 </ul>
                             </div>
-                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                            <button type="button" class="btn btn-black text-black open-modal-btn border-0" data-bs-toggle="modal"
                                 data-bs-target="#infoModal" data-title="Harvest Ride" data-image="../images/caravan-2.png"
                                 data-description-url="../descriptions/txtmodal.html">
                                 + info
@@ -279,6 +279,7 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
         </script>
     <script src="../scripts/modalHandler.js"></script>
+    <script src="../scripts/addBgToNav.js"></script>
 </body>
 
 </html>

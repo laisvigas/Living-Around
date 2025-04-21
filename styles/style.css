@@ -1,30 +1,49 @@
+/* smooth scrolling when user click on arrow icon on index page */
 html {
     scroll-behavior: smooth;
 }
 
-/* NAV */
+/* navbar when user scroll page */
+nav.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+nav.navbar.scrolled {
+    background-color: white !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav.navbar.scrolled .nav-link {
+    color: black !important;
+}
+
+/* MEDIA QUERIES: */ 
 
 /* large screens */
 @media (min-width: 576px) {
     nav.navbar {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         background: none !important;
-        z-index: 2;
+        z-index: 1000;
     }
 }
 
 /* small screens */
 @media (max-width: 575.98px) {
     nav.navbar {
-        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
 
     .navbar-collapse {
-        padding: 1rem;
-        border-radius: 0.5rem;
+        z-index: 999; 
+        position: relative;
     }
 
     .navbar-collapse .nav-link {
@@ -33,5 +52,5 @@ html {
 
     #mapContainer {
         height: 200px !important;
-      }
+    }
 }
