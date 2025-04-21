@@ -18,204 +18,212 @@
 
 <body style="background-color: #B49B2C40;">
 
-    <!--NAV-->
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <!--home icon (black)-->
-            <a href="index.html" class="navbar-brand">
-                <img src="../images/home-icon.png" alt="Home" style="width: 40px; height: 40px; filter: brightness(0) invert(0);">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end m-4"
-                style="font-family: 'Josefin Slab', Georgia, serif;" id="navbarNav">
-                <ul class="navbar-nav gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="./acomodacao.html">ACOMODAÇÃO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="./locais.html">LOCAIS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-black" href="./contatos.html">CONTATOS</a>
-                    </li>
-                </ul>
+    <header>
+        <!--NAV-->
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <!--home icon (black)-->
+                <a href="index.html" class="navbar-brand">
+                    <img src="../images/home-icon.png" alt="Home"
+                        style="width: 40px; height: 40px; filter: brightness(0) invert(0);">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end m-4"
+                    style="font-family: 'Josefin Slab', Georgia, serif;" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./acomodacao.html">ACOMODAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./locais.html">LOCAIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black" href="./contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--nav background-->
+        <div class="d-flex justify-content-center align-items-center text-white" style="background-image: url(../images/caravan-7.png); 
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                    position: relative;">
+
+            <div class="text-center" style="z-index: 1;">
+                <h1 class="display-2 px-1"
+                    style="font-family: 'Josefin Slab', Georgia, serif; font-weight: 500; background-color: #0B1111CC; width: 100vw;">
+                    O SEU NOVO OFFICE</h1>
             </div>
         </div>
-    </nav>
-
-    <!--nav background-->
-    <div class="d-flex justify-content-center align-items-center text-white" style="background-image: url(../images/caravan-7.png); 
-                  background-size: cover;
-                  background-position: center;
-                  height: 100vh;
-                  position: relative;">
-
-        <div class="text-center" style="z-index: 1;">
-            <h1 class="display-2 px-1"
-                style="font-family: 'Josefin Slab', Georgia, serif; font-weight: 500; background-color: #0B1111CC; width: 100vw;">
-                O SEU NOVO OFFICE</h1>
-        </div>
-    </div>
+    </header>
 
     <!--MAIN-->
-    <div class="d-flex justify-content-center align-items-center m-5" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-        <div class="container text-center">
-            <div class="row row-cols-1 row-cols-md-2 g-5">
+    <main>
+        <div class="d-flex justify-content-center align-items-center m-5"
+            style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="container text-center">
+                <section class="row row-cols-1 row-cols-md-2 g-5">
 
-                <!--card 1-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/kombi-2.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Hippie Ride</h1>
-                            <p class="text-start">A partir de 50€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Hippie Ride" data-image="../images/kombi-2.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 1-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/kombi-2.png" class="imagem de uma kombi verde" alt="...">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Hippie Ride</h1>
+                                <p class="text-start">A partir de 50€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Hippie Ride" data-image="../images/kombi-2.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
 
-                <!--card 2-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/caravan-2.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Harvest Ride</h1>
-                            <p class="text-start">A partir de 80€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Harvest Ride" data-image="../images/caravan-2.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 2-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/caravan-2.png" class="card-img-top rounded-5" alt="imagem de uma caravana branca com paisagem ao fundo">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Harvest Ride</h1>
+                                <p class="text-start">A partir de 80€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Harvest Ride" data-image="../images/caravan-2.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
 
-                <!--card 3-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/caravan-4.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Nomade Ride</h1>
-                            <p class="text-start">A partir de 100€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Nomade Ride" data-image="../images/caravan-4.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 3-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/caravan-4.png" class="card-img-top rounded-5" alt="imagem de uma caravana branca com paisagem ao fundo">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Nomade Ride</h1>
+                                <p class="text-start">A partir de 100€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Nomade Ride" data-image="../images/caravan-4.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
 
-                <!--card 4-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/caravan-5.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Family Ride</h1>
-                            <p p class="text-start">A partir de 50€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Family Ride" data-image="../images/caravan-5.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 4-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/caravan-5.png" class="card-img-top rounded-5" alt="imagem do fundo de uma caravana na estrada">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Family Ride</h1>
+                                <p p class="text-start">A partir de 50€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Family Ride" data-image="../images/caravan-5.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
 
-                <!--card 5-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/caravan-6.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Surf Ride</h1>
-                            <p class="text-start">A partir de 80€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Surf Ride" data-image="../images/caravan-6.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 5-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/caravan-6.png" class="card-img-top rounded-5" alt="imagem de uma caravana vermelha de frente para a praia">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Surf Ride</h1>
+                                <p class="text-start">A partir de 80€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Surf Ride" data-image="../images/caravan-6.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
 
-                <!--card 6-->
-                <div class="col">
-                    <div class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
-                        <img src="../images/caravan-3.png" class="card-img-top rounded-5" alt="...">
-                        <div class="card-body text-start">
-                            <h1 class="fs-6 fw-bold text-center">Cave Ride</h1>
-                            <p class="text-start">A partir de 30€/dia</p>
-                            <p class="card-text p-0 m-0">Equipada com:</p>
-                            <ul>
-                                <li>Cozinha equipada;</li>
-                                <li>Cama de casal;</li>
-                                <li>WC portátil;</li>
-                                <li>Carregador USB;</li>
-                            </ul>
-                        </div>
-                        <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
-                            data-bs-target="#infoModal" data-title="Cave Ride" data-image="../images/caravan-3.png"
-                            data-description-url="../descriptions/txtmodal.html">
-                            + info
-                        </button>
+                    <!--card 6-->
+                    <div class="col">
+                        <article class="card mx-auto p-2 rounded-5" style="box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.311);">
+                            <img src="../images/caravan-3.png" class="card-img-top rounded-5" alt="imagem de uma mini caravana de frente para a praia">
+                            <div class="card-body text-start">
+                                <h1 class="fs-6 fw-bold text-center">Cave Ride</h1>
+                                <p class="text-start">A partir de 30€/dia</p>
+                                <p class="card-text p-0 m-0">Equipada com:</p>
+                                <ul>
+                                    <li>Cozinha equipada;</li>
+                                    <li>Cama de casal;</li>
+                                    <li>WC portátil;</li>
+                                    <li>Carregador USB;</li>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn btn-black text-black open-modal-btn" data-bs-toggle="modal"
+                                data-bs-target="#infoModal" data-title="Cave Ride" data-image="../images/caravan-3.png"
+                                data-description-url="../descriptions/txtmodal.html">
+                                + info
+                            </button>
+                        </article>
                     </div>
-                </div>
+                </section>
             </div>
         </div>
-    </div>
+    </main>
 
     <!--FOOTER-->
-    <div class="bg-black d-flex flex-column justify-content-center align-items-center p-4 text-center">
-        <p class="text-white fs-5" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+    <footer aria-label="Rodapé com links de redes sociais e crédito da página"
+        class="bg-black d-flex flex-column justify-content-center align-items-center p-4 text-center">
+        <p class="text-white fs-5"
+            style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
             LIVING AROUND
         </p>
 
-        <div class="d-flex gap-3">
+        <div aria-label="Redes sociais" class="d-flex gap-3">
             <!--facebook-->
             <a href="https://facebook.com" target="_blank"
                 class="d-inline-flex align-items-center justify-content-center bg-secondary rounded"
@@ -238,10 +246,11 @@
             </a>
         </div>
 
-        <p class="text-white fs-6 m-3 text-center" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+        <p class="text-white fs-6 m-3 text-center"
+            style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
             Power by Cesae Digital
         </p>
-    </div>
+    </footer>
 
     <!--REUSABLE MODAL-->
     <div class="modal fade" id="infoModal" tabindex="-1">
@@ -250,7 +259,8 @@
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body text-center" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+                <div class="modal-body text-center"
+                    style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
                     <img id="modalImage" src="" alt="Imagem" class="img-fluid rounded-4 mb-3" />
                     <h5 id="modalTitle" class="fw-bold"></h5>
                     <div id="modalDescription" class="mt-3 text-start" style="text-align: justify;"></div>
@@ -269,8 +279,6 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
         </script>
     <script src="../scripts/modalHandler.js"></script>
-
-
 </body>
 
 </html>
