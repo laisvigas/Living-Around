@@ -19,95 +19,99 @@
 <body>
 
     <!--NAV-->
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <!--home icon-->
-            <a href="index.html" class="navbar-brand">
-                <img src="../images/home-icon.png" alt="Home" style="width: 40px; height: 40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end m-4"
-                style="font-family: 'Josefin Slab', Georgia, serif, sans-serif;" id="navbarNav">
-                <ul class="navbar-nav gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./acomodacao.html">ACOMODAÇÃO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./locais.html">LOCAIS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="./contatos.html">CONTATOS</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!--background image-->
-    <div class="container-fluid" style="
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/caravan-1.png);
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;">
-
-        <!--MAIN-->
-        <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-            <div class="container mt-5 pt-5">
-                <div class="row">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4 pb-5">
-                        <form class="bg-black p-4 rounded-4 text-white" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-                            <div class="mb-3">
-                                <label for="name" class="form-label m-0">Nome:</label>
-                                <input type="text" class="form-control" id="name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label m-0">Email:</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                            </div>
-                            <div class="mb-5">
-                                <label for="formTextArea" class="form-label m-0">Mensagem:</label>
-                                <textarea class="form-control" id="formTextArea" rows="5"
-                                    style="resize: none;"></textarea>
-                            </div>
-                            <button type="button" class="btn btn-black text-white rounded-pill border-white w-100"
-                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                                Enviar
-                            </button>
-                        </form>
-                    </div>
-
-                    <!--QUOTE-->
-                    <div class="col-md-4 d-flex justify-content-end p-5">
-                        <figure class="text-end" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
-                            <blockquote class="blockquote text-white text-center">
-                                <p>"Viajar é descobrir que todos estão errados sobre outros países."</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer text-white">
-                                Aldous Huxley
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-2"></div>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <div class="container-fluid">
+                <!--home icon-->
+                <a href="index.html" class="navbar-brand">
+                    <img src="../images/home-icon.png" alt="Home" style="width: 40px; height: 40px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end m-4"
+                    style="font-family: 'Josefin Slab', Georgia, serif, sans-serif;" id="navbarNav">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./acomodacao.html">ACOMODAÇÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./locais.html">LOCAIS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./contatos.html">CONTATOS</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
+    </header>
 
-    </div>
+    <!--background image-->
+    <main>
+        <section class="container-fluid" style="
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/caravan-1.png);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+    ">
+
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+                <div class="container mt-5 pt-5">
+                    <div class="row justify-content-between gx-lg-5 p-5">
+                        <!--FORM-->
+                        <div class="col-12 col-lg-5 justify-content-between mb-4 mt-4">
+                            <form class="bg-black p-4 rounded-4 text-white"
+                                style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label m-0">Nome:</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label m-0">Email:</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                </div>
+                                <div class="mb-5">
+                                    <label for="formTextArea" class="form-label m-0">Mensagem:</label>
+                                    <textarea class="form-control" id="formTextArea" rows="5"
+                                        style="resize: none;"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-black text-white rounded-pill border-white w-100"
+                                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Enviar
+                                </button>
+                            </form>
+                        </div>
+
+                        <!--sentence-->
+                        <aside class="col-12 col-lg-5 justify-content-between mb-4 mt-4">
+                            <figure class="text-end"
+                                style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+                                <blockquote class="blockquote text-white text-center">
+                                    <p>"Viajar é descobrir que todos estão errados <br> sobre outros países."</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer text-white">
+                                    Aldous Huxley
+                                </figcaption>
+                            </figure>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Modal -->
-
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center" style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+            <div class="modal-content text-center"
+                style="font-family: 'Jura', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
                 <div class="modal-body d-flex flex-column align-items-center justify-content-center">
                     <p class="mb-3">Seu formulário foi enviado com sucesso!</p>
                     <button type="button" class="btn btn-primary text-white rounded-pill px-5 mt-2"
