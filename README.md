@@ -31,6 +31,6 @@ This project helped me strengthen my skills in:
 
 ## Live Demo
 
--> <a href="https://laisvigas.github.io/Living-Around/pages/index.html" target="_blank">Access the project here</a> <-
+-> [Access the project here](https://laisvigas.github.io/Living-Around/pages/index.html) <-
 
 
